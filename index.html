@@ -388,7 +388,7 @@
             <!-- Activity Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="kegiatanGrid">
                 <!-- Pengajian Bapak-bapak -->
-                <div class="kegiatan-item rutin bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in">
+                <div class="kegiatan-item rutin bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in cursor-pointer" onclick="showPage('detail-pengajian-bapak')">
                     <div class="h-48 overflow-hidden">
                         <img src="https://kimi-web-img.moonshot.cn/img/www.shutterstock.com/d0754283f69e781e90691e4b87aa564629e2f177.jpg" alt="Pengajian" class="w-full h-full object-cover hover:scale-110 transition duration-500">
                     </div>
@@ -404,7 +404,7 @@
                 </div>
 
                 <!-- Pengajian Ibu-ibu -->
-                <div class="kegiatan-item rutin bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in" style="transition-delay: 0.1s">
+                <div class="kegiatan-item rutin bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in cursor-pointer" style="transition-delay: 0.1s" onclick="showPage('detail-pengajian-ibu')">
                     <div class="h-48 overflow-hidden">
                         <img src="https://kimi-web-img.moonshot.cn/img/media.istockphoto.com/d567ab007b8a6712016b66ca63d460f41e2355d9.jpg" alt="Pengajian Ibu-ibu" class="w-full h-full object-cover hover:scale-110 transition duration-500">
                     </div>
@@ -420,7 +420,7 @@
                 </div>
 
                 <!-- Kerja Bakti -->
-                <div class="kegiatan-item sosial bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in" style="transition-delay: 0.2s">
+                <div class="kegiatan-item sosial bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in cursor-pointer" style="transition-delay: 0.2s" onclick="showPage('detail-kerja-bakti')">
                     <div class="h-48 overflow-hidden">
                         <img src="https://kimi-web-img.moonshot.cn/img/www.socialexpat.net/04d94c066b7f24d0402562bd148b4ff8a4b54803.jpg" alt="Kerja Bakti" class="w-full h-full object-cover hover:scale-110 transition duration-500">
                     </div>
@@ -436,7 +436,7 @@
                 </div>
 
                 <!-- Posyandu -->
-                <div class="kegiatan-item kesehatan bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in">
+                <div class="kegiatan-item kesehatan bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in cursor-pointer" onclick="showPage('detail-posyandu')">
                     <div class="h-48 overflow-hidden">
                         <img src="https://kimi-web-img.moonshot.cn/img/i0.wp.com/2bfabe881a8b7ac843941e029f87643b0f6d0ea0.PNG" alt="Posyandu" class="w-full h-full object-cover hover:scale-110 transition duration-500">
                     </div>
@@ -452,7 +452,7 @@
                 </div>
 
                 <!-- Karang Taruna -->
-                <div class="kegiatan-item pemuda bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in" style="transition-delay: 0.1s">
+                <div class="kegiatan-item pemuda bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in cursor-pointer" style="transition-delay: 0.1s" onclick="showPage('detail-karang-taruna')">
                     <div class="h-48 overflow-hidden">
                         <img src="https://kimi-web-img.moonshot.cn/img/conveyindonesia.com/243f1eef3cde59c4e2eb8fbe067931b70a3aa8d5.jpg" alt="Karang Taruna" class="w-full h-full object-cover hover:scale-110 transition duration-500">
                     </div>
@@ -533,8 +533,1431 @@
             </div>
         </div>
     </section>
+    </section>
 
-    <!-- PAGE 3: LAYANAN & FASILITAS -->
+    <!-- DETAIL KEGIATAN 1: Pengajian Bapak-bapak -->
+    <section id="detail-pengajian-bapak" class="page pt-20 bg-cream-50">
+        <div class="bg-sage-800 py-16 relative overflow-hidden">
+            <div class="absolute inset-0 islamic-pattern opacity-10"></div>
+            <div class="max-w-7xl mx-auto px-4 relative z-10">
+                <button onclick="showPage('kegiatan')" class="mb-6 flex items-center gap-2 text-cream-200 hover:text-white transition cursor-pointer">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Kegiatan
+                </button>
+                <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">Pengajian Bapak-bapak</h1>
+                <p class="text-cream-200">Kajian Ilmu Agama untuk Kaum Muslimin</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-1 space-y-6">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg border border-cream-200">
+                        <h3 class="text-xl font-bold text-sage-800 mb-4 flex items-center gap-2">
+                            <i class="fas fa-info-circle text-gold-500"></i> Informasi
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <i class="far fa-clock text-gold-500 mt-1 w-5"></i>
+                                <div>
+                                    <p class="font-semibold text-earth-800 text-sm">Waktu</p>
+                                    <p class="text-earth-600 text-sm">Setiap Malam Jumat</p>
+                                    <p class="text-earth-500 text-xs">19:30 - 21:00 WIB</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-map-marker-alt text-gold-500 mt-1 w-5"></i>
+                                <div>
+                                    <p class="font-semibold text-earth-800 text-sm">Lokasi</p>
+                                    <p class="text-earth-600 text-sm">Masjid Al-Ikhlas</p>
+                                    <p class="text-earth-500 text-xs">RW 10, Lantai 2</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-users text-gold-500 mt-1 w-5"></i>
+                                <div>
+                                    <p class="font-semibold text-earth-800 text-sm">Peserta</p>
+                                    <p class="text-earth-600 text-sm">Bapak-bapak Muslim</p>
+                                    <p class="text-earth-500 text-xs">Umur 17+ tahun</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-sage-600 to-sage-700 rounded-2xl p-6 text-white shadow-lg">
+                        <h3 class="text-lg font-bold mb-3">Penyelenggara</h3>
+                        <p class="text-sage-100 text-sm mb-2">DKM Masjid Al-Ikhlas</p>
+                        <p class="text-sage-200 text-xs">Koordinator: Ust. Saepurahman</p>
+                        <div class="mt-4 pt-4 border-t border-sage-500">
+                            <a href="https://wa.me/6281234567000" target="_blank" class="flex items-center gap-2 text-sm text-white hover:text-gold-300 transition">
+                                <i class="fab fa-whatsapp"></i> Hubungi Panitia
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 space-y-8">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-cream-200">
+                        <h3 class="text-2xl font-bold text-sage-800 mb-4">Tentang Kegiatan</h3>
+                        <div class="prose text-earth-600 leading-relaxed space-y-4">
+                            <p>Pengajian Bapak-bapak merupakan kegiatan rutin yang diselenggarakan setiap malam Jumat untuk memperdalam pemahaman agama Islam bagi kaum muslimin di lingkungan RW 10.</p>
+                            <p>Kegiatan ini berfokus pada kajian kitab kuning (Fathul Mu'in, Nailul Authar), tafsir Al-Quran tematis, dan hadits-hadits shahih yang dibawakan oleh ustadz-ustadz kompeten.</p>
+                            <p>Selain aspek keagamaan, pengajian ini juga menjadi wadah silaturahmi antar warga, diskusi masalah sosial, dan konsultasi kehidupan bermasyarakat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-cream-200">
+                        <h3 class="text-xl font-bold text-sage-800 mb-6">Dokumentasi Kegiatan</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="aspect-square rounded-xl overflow-hidden bg-cream-100 shadow-md">
+                                <img src="https://kimi-web-img.moonshot.cn/img/www.shutterstock.com/d0754283f69e781e90691e4b87aa564629e2f177.jpg" alt="Pengajian 1" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-cream-100 shadow-md">
+                                <img src="https://kimi-web-img.moonshot.cn/img/media.istockphoto.com/d567ab007b8a6712016b66ca63d460f41e2355d9.jpg" alt="Pengajian 2" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-sage-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-mosque text-4xl text-sage-400"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-gold-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-book-quran text-4xl text-gold-500"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-earth-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-users text-4xl text-earth-400"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-sage-200 shadow-md flex items-center justify-center">
+                                <i class="fas fa-praying-hands text-4xl text-sage-600"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <button onclick="showPage('kegiatan')" class="btn-primary px-8 py-3 rounded-full text-white font-semibold inline-flex items-center gap-2 shadow-lg hover:shadow-xl transition">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Daftar Kegiatan
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAIL KEGIATAN 2: Pengajian Ibu-ibu -->
+    <section id="detail-pengajian-ibu" class="page pt-20 bg-cream-50">
+        <div class="bg-sage-800 py-16 relative overflow-hidden">
+            <div class="absolute inset-0 islamic-pattern opacity-10"></div>
+            <div class="max-w-7xl mx-auto px-4 relative z-10">
+                <button onclick="showPage('kegiatan')" class="mb-6 flex items-center gap-2 text-cream-200 hover:text-white transition cursor-pointer">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Kegiatan
+                </button>
+                <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">Pengajian Ibu-ibu</h1>
+                <p class="text-cream-200">Kajian Praktis untuk Muslimah</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-1 space-y-6">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg border border-cream-200">
+                        <h3 class="text-xl font-bold text-sage-800 mb-4 flex items-center gap-2">
+                            <i class="fas fa-info-circle text-gold-500"></i> Informasi
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <i class="far fa-clock text-gold-500 mt-1 w-5"></i>
+                                <div>
+                                    <p class="font-semibold text-earth-800 text-sm">Waktu</p>
+                                    <p class="text-earth-600 text-sm">Setiap Minggu</p>
+                                    <p class="text-earth-500 text-xs">08:00 - 10:00 WIB</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-map-marker-alt text-gold-500 mt-1 w-5"></i>
+                                <div>
+                                    <p class="font-semibold text-earth-800 text-sm">Lokasi</p>
+                                    <p class="text-earth-600 text-sm">Aula Masjid Al-Ikhlas</p>
+                                    <p class="text-earth-500 text-xs">Samping Taman RW</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-female text-gold-500 mt-1 w-5"></i>
+                                <div>
+                                    <p class="font-semibold text-earth-800 text-sm">Peserta</p>
+                                    <p class="text-earth-600 text-sm">Ibu-ibu Muslimah</p>
+                                    <p class="text-earth-500 text-xs">Ibu rumah tangga & karyawati</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl p-6 text-white shadow-lg">
+                        <h3 class="text-lg font-bold mb-3">Penyelenggara</h3>
+                        <p class="text-pink-100 text-sm mb-2">Majelis Taklim Muslimah</p>
+                        <p class="text-pink-200 text-xs">Koordinator: Ibu Siti Aminah</p>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 space-y-8">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-cream-200">
+                        <h3 class="text-2xl font-bold text-sage-800 mb-4">Tentang Kegiatan</h3>
+                        <div class="prose text-earth-600 leading-relaxed space-y-4">
+                            <p>Pengajian Ibu-ibu adalah wadah bagi para muslimah di RW 10 untuk belajar agama sekaligus bersosialisasi. Kajian berfokus pada materi-materi praktis seperti tafsir Quran praktis, fiqih ibadah, parenting Islami, dan ekonomi syariah rumah tangga.</p>
+                            <p>Setiap pertemuan diisi dengan ceramah interaktif, sharing session, dan door prize menarik. Tersedia juga program "Baitul Maal" untuk membantu sesama yang membutuhkan.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-cream-200">
+                        <h3 class="text-xl font-bold text-sage-800 mb-6">Dokumentasi Kegiatan</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="aspect-square rounded-xl overflow-hidden bg-cream-100 shadow-md">
+                                <img src="https://kimi-web-img.moonshot.cn/img/media.istockphoto.com/d567ab007b8a6712016b66ca63d460f41e2355d9.jpg" alt="Ibu-ibu 1" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-pink-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-female text-4xl text-pink-400"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-sage-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-book-open text-4xl text-sage-400"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-gold-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-heart text-4xl text-gold-500"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-cream-200 shadow-md flex items-center justify-center">
+                                <i class="fas fa-hand-holding-heart text-4xl text-earth-400"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-pink-200 shadow-md flex items-center justify-center">
+                                <i class="fas fa-comments text-4xl text-pink-500"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <button onclick="showPage('kegiatan')" class="btn-primary px-8 py-3 rounded-full text-white font-semibold inline-flex items-center gap-2 shadow-lg hover:shadow-xl transition">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Daftar Kegiatan
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAIL KEGIATAN 3: Kerja Bakti -->
+    <section id="detail-kerja-bakti" class="page pt-20 bg-cream-50">
+        <div class="bg-sage-800 py-16 relative overflow-hidden">
+            <div class="absolute inset-0 islamic-pattern opacity-10"></div>
+            <div class="max-w-7xl mx-auto px-4 relative z-10">
+                <button onclick="showPage('kegiatan')" class="mb-6 flex items-center gap-2 text-cream-200 hover:text-white transition cursor-pointer">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Kegiatan
+                </button>
+                <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">Kerja Bakti Lingkungan</h1>
+                <p class="text-cream-200">Gotong Royong Membangun Komunitas</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-1 space-y-6">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg border border-cream-200">
+                        <h3 class="text-xl font-bold text-sage-800 mb-4 flex items-center gap-2">
+                            <i class="fas fa-info-circle text-gold-500"></i> Informasi
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <i class="far fa-calendar text-gold-500 mt-1 w-5"></i>
+                                <div>
+                                    <p class="font-semibold text-earth-800 text-sm">Jadwal</p>
+                                    <p class="text-earth-600 text-sm">Minggu Pertama</p>
+                                    <p class="text-earth-500 text-xs">Setiap bulan</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="far fa-clock text-gold-500 mt-1 w-5"></i>
+                                <div>
+                                    <p class="font-semibold text-earth-800 text-sm">Waktu</p>
+                                    <p class="text-earth-600 text-sm">07:00 - 09:00 WIB</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-map-marker-alt text-gold-500 mt-1 w-5"></i>
+                                <div>
+                                    <p class="font-semibold text-earth-800 text-sm">Lokasi</p>
+                                    <p class="text-earth-600 text-sm">Keliling Lingkungan RW 10</p>
+                                    <p class="text-earth-500 text-xs">Titik kumpul: Balai RW</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-green-600 to-green-700 rounded-2xl p-6 text-white shadow-lg">
+                        <h3 class="text-lg font-bold mb-3">Perlengkapan</h3>
+                        <ul class="text-sm text-green-100 space-y-2">
+                            <li><i class="fas fa-check mr-2"></i>Sapu lidi & garu</li>
+                            <li><i class="fas fa-check mr-2"></i>Karung sampah</li>
+                            <li><i class="fas fa-check mr-2"></i>Sarung tangan</li>
+                            <li><i class="fas fa-check mr-2"></i>Air mineral</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 space-y-8">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-cream-200">
+                        <h3 class="text-2xl font-bold text-sage-800 mb-4">Tentang Kegiatan</h3>
+                        <div class="prose text-earth-600 leading-relaxed space-y-4">
+                            <p>Kerja Bakti adalah wujud nyata semangat gotong royong warga RW 10. Dilaksanakan rutin setiap minggu pertama bulan ini untuk menjaga kebersihan dan kenyamanan lingkungan.</p>
+                            <p>Kegiatan meliputi pembersihan selokan, pengecatan marka jalan, perawatan taman komunal, dan pengangkutan sampah besar. Setiap RT bergiliran menjadi koordinator dan menyediakan konsumsi.</p>
+                            <p>Setelah kerja bakti, biasanya diadakan arisan sederhana atau ngopi bareng sebagai apresiasi bagi warga yang berpartisipasi.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-cream-200">
+                        <h3 class="text-xl font-bold text-sage-800 mb-6">Dokumentasi Kegiatan</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="aspect-square rounded-xl overflow-hidden bg-cream-100 shadow-md">
+                                <img src="https://kimi-web-img.moonshot.cn/img/www.socialexpat.net/04d94c066b7f24d0402562bd148b4ff8a4b54803.jpg" alt="Kerja Bakti 1" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-green-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-broom text-4xl text-green-500"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-sage-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-leaf text-4xl text-sage-500"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-earth-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-hands-helping text-4xl text-earth-500"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-cream-200 shadow-md flex items-center justify-center">
+                                <i class="fas fa-trash-alt text-4xl text-earth-400"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-green-200 shadow-md flex items-center justify-center">
+                                <i class="fas fa-seedling text-4xl text-green-600"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <button onclick="showPage('kegiatan')" class="btn-primary px-8 py-3 rounded-full text-white font-semibold inline-flex items-center gap-2 shadow-lg hover:shadow-xl transition">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Daftar Kegiatan
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAIL KEGIATAN 4: Posyandu -->
+    <section id="detail-posyandu" class="page pt-20 bg-cream-50">
+        <div class="bg-sage-800 py-16 relative overflow-hidden">
+            <div class="absolute inset-0 islamic-pattern opacity-10"></div>
+            <div class="max-w-7xl mx-auto px-4 relative z-10">
+                <button onclick="showPage('kegiatan')" class="mb-6 flex items-center gap-2 text-cream-200 hover:text-white transition cursor-pointer">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Kegiatan
+                </button>
+                <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">Posyandu Balita & Lansia</h1>
+                <p class="text-cream-200">Pelayanan Kesehatan untuk Generasi Emas</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-1 space-y-6">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg border border-cream-200">
+                        <h3 class="text-xl font-bold text-sage-800 mb-4 flex items-center gap-2">
+                            <i class="fas fa-info-circle text-gold-500"></i> Informasi
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <i class="far fa-calendar-check text-gold-500 mt-1 w-5"></i>
+                                <div>
+                                    <p class="font-semibold text-earth-800 text-sm">Jadwal</p>
+                                    <p class="text-earth-600 text-sm">Setiap Tanggal 15</p>
+                                    <p class="text-earth-500 text-xs">Bulanan</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="far fa-clock text-gold-500 mt-1 w-5"></i>
+                                <div>
+                                    <p class="font-semibold text-earth-800 text-sm">Waktu</p>
+                                    <p class="text-earth-600 text-sm">08:00 - 11:00 WIB</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-map-marker-alt text-gold-500 mt-1 w-5"></i>
+                                <div>
+                                    <p class="font-semibold text-earth-800 text-sm">Lokasi</p>
+                                    <p class="text-earth-600 text-sm">Balai RW 10</p>
+                                    <p class="text-earth-500 text-xs">Lantai 1 (Aula Utama)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-red-500 to-red-600 rounded-2xl p-6 text-white shadow-lg">
+                        <h3 class="text-lg font-bold mb-3">Layanan Tersedia</h3>
+                        <ul class="text-sm text-red-100 space-y-2">
+                            <li><i class="fas fa-weight mr-2"></i>Penimbangan balita</li>
+                            <li><i class="fas fa-syringe mr-2"></i>Imunisasi</li>
+                            <li><i class="fas fa-heartbeat mr-2"></i>Cek tekanan darah</li>
+                            <li><i class="fas fa-apple-alt mr-2"></i>Penyuluhan gizi</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 space-y-8">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-cream-200">
+                        <h3 class="text-2xl font-bold text-sage-800 mb-4">Tentang Kegiatan</h3>
+                        <div class="prose text-earth-600 leading-relaxed space-y-4">
+                            <p>Pos Pelayanan Terpadu (Posyandu) RW 10 melayani dua kelompok rentan: balita (0-5 tahun) dan lansia (60+ tahun). Kegiatan ini bekerjasama dengan Puskesmas Kecamatan untuk memantau kesehatan warga secara rutin.</p>
+                            <p>Untuk balita, dilakukan penimbangan, pengukuran tinggi badan, pemberian vitamin A, dan imunisasi sesuai jadwal. Bagi lansia, tersedia cek tekanan darah, gula darah, konsultasi kesehatan, dan senam lansia.</p>
+                            <p>Kader Posyandu dari warga RW 10 telah terlatih dan bersertifikat untuk memberikan pelayanan prima dengan pendekatan kekeluargaan.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-cream-200">
+                        <h3 class="text-xl font-bold text-sage-800 mb-6">Dokumentasi Kegiatan</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="aspect-square rounded-xl overflow-hidden bg-cream-100 shadow-md">
+                                <img src="https://kimi-web-img.moonshot.cn/img/i0.wp.com/2bfabe881a8b7ac843941e029f87643b0f6d0ea0.PNG" alt="Posyandu 1" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-red-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-baby text-4xl text-red-400"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-blue-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-user-md text-4xl text-blue-400"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-green-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-apple-alt text-4xl text-green-500"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-cream-200 shadow-md flex items-center justify-center">
+                                <i class="fas fa-heartbeat text-4xl text-red-500"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-sage-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-user-friends text-4xl text-sage-500"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <button onclick="showPage('kegiatan')" class="btn-primary px-8 py-3 rounded-full text-white font-semibold inline-flex items-center gap-2 shadow-lg hover:shadow-xl transition">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Daftar Kegiatan
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAIL KEGIATAN 5: Karang Taruna -->
+    <section id="detail-karang-taruna" class="page pt-20 bg-cream-50">
+        <div class="bg-sage-800 py-16 relative overflow-hidden">
+            <div class="absolute inset-0 islamic-pattern opacity-10"></div>
+            <div class="max-w-7xl mx-auto px-4 relative z-10">
+                <button onclick="showPage('kegiatan')" class="mb-6 flex items-center gap-2 text-cream-200 hover:text-white transition cursor-pointer">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Kegiatan
+                </button>
+                <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">Karang Taruna RW 10</h1>
+                <p class="text-cream-200">Pemberdayaan Pemuda untuk Indonesia Emas</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-1 space-y-6">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg border border-cream-200">
+                        <h3 class="text-xl font-bold text-sage-800 mb-4 flex items-center gap-2">
+                            <i class="fas fa-info-circle text-gold-500"></i> Informasi
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <i class="far fa-clock text-gold-500 mt-1 w-5"></i>
+                                <div>
+                                    <p class="font-semibold text-earth-800 text-sm">Waktu Rutin</p>
+                                    <p class="text-earth-600 text-sm">Setiap Sabtu</p>
+                                    <p class="text-earth-500 text-xs">15:00 - 17:00 WIB</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-map-marker-alt text-gold-500 mt-1 w-5"></i>
+                                <div>
+                                    <p class="font-semibold text-earth-800 text-sm">Lokasi</p>
+                                    <p class="text-earth-600 text-sm">Aula Pemuda & Lapangan RW</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-user-friends text-gold-500 mt-1 w-5"></i>
+                                <div>
+                                    <p class="font-semibold text-earth-800 text-sm">Anggota</p>
+                                    <p class="text-earth-600 text-sm">Pemuda/i usia 13-30 tahun</p>
+                                    <p class="text-earth-500 text-xs">Sekitar 45 anggota aktif</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-6 text-white shadow-lg">
+                        <h3 class="text-lg font-bold mb-3">Program Unggulan</h3>
+                        <ul class="text-sm text-blue-100 space-y-2">
+                            <li><i class="fas fa-laptop-code mr-2"></i>Kelas Digital Marketing</li>
+                            <li><i class="fas fa-futbol mr-2"></i>Turnamen Olahraga</li>
+                            <li><i class="fas fa-hands-helping mr-2"></i>Bakti Sosial</li>
+                            <li><i class="fas fa-lightbulb mr-2"></i>Inovasi Desa</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 space-y-8">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-cream-200">
+                        <h3 class="text-2xl font-bold text-sage-800 mb-4">Tentang Kegiatan</h3>
+                        <div class="prose text-earth-600 leading-relaxed space-y-4">
+                            <p>Karang Taruna RW 10 adalah organisasi kepemudaan yang berperan sebagai motor penggerak pembangunan di lingkungan RW. Didirikan pada tahun 2015, organisasi ini telah menghasilkan berbagai prestasi di tingkat kecamatan dan kota.</p>
+                            <p>Kegiatan rutin meliputi pelatihan keterampilan digital (desain grafis, video editing), olahraga bersama (futsal, badminton), serta pengabdian masyarakat seperti mengajar anak-anak kurang mampu dan gotong royong infrastruktur.</p>
+                            <p>Setiap tahun, Karang Taruna mengadakan festival pemuda yang melibatkan seluruh RT dengan berbagai kompetisi kreatif dan olahraga.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-cream-200">
+                        <h3 class="text-xl font-bold text-sage-800 mb-6">Dokumentasi Kegiatan</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="aspect-square rounded-xl overflow-hidden bg-cream-100 shadow-md">
+                                <img src="https://kimi-web-img.moonshot.cn/img/conveyindonesia.com/243f1eef3cde59c4e2eb8fbe067931b70a3aa8d5.jpg" alt="Karang Taruna 1" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-blue-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-running text-4xl text-blue-500"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-sage-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-laptop text-4xl text-sage-500"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-gold-100 shadow-md flex items-center justify-center">
+                                <i class="fas fa-trophy text-4xl text-gold-500"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-cream-200 shadow-md flex items-center justify-center">
+                                <i class="fas fa-music text-4xl text-earth-500"></i>
+                            </div>
+                            <div class="aspect-square rounded-xl overflow-hidden bg-blue-200 shadow-md flex items-center justify-center">
+                                <i class="fas fa-flag text-4xl text-blue-600"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <button onclick="showPage('kegiatan')" class="btn-primary px-8 py-3 rounded-full text-white font-semibold inline-flex items-center gap-2 shadow-lg hover:shadow-xl transition">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Daftar Kegiatan
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 3: LAYANAN & FASILITAS (ASLI) -->
+    <section id="layanan" class="page pt-20 bg-cream-50">
+        <div class="bg-sage-800 py-20 relative overflow-hidden">
+            <div class="absolute inset-0 islamic-pattern opacity-10"></div>
+            <div class="max-w-7xl mx-auto px-4 relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 text-center">Layanan & Fasilitas</h1>
+                <p class="text-cream-200 text-center max-w-2xl mx-auto">Fasilitas umum dan layanan yang tersedia untuk warga RW 10</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Posyandu -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-in">
+                    <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center text-red-600 text-3xl mb-6">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-sage-800 mb-3">Posyandu</h3>
+                    <p class="text-earth-600 mb-4">Pelayanan kesehatan ibu dan anak, imunisasi, penimbangan balita, dan penyuluhan gizi.</p>
+                    <div class="flex items-center text-sm text-sage-600 font-medium">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>Balai RW 10</span>
+                    </div>
+                </div>
+
+                <!-- Puskesmas -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-in" style="transition-delay: 0.1s">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-3xl mb-6">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-sage-800 mb-3">Puskesmas Terdekat</h3>
+                    <p class="text-earth-600 mb-4">Akses ke Puskesmas Kelurahan dengan jadwal pelayanan rutin dan posko kesehatan.</p>
+                    <div class="flex items-center text-sm text-sage-600 font-medium">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>500m dari RW 10</span>
+                    </div>
+                </div>
+
+                <!-- Masjid -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-in" style="transition-delay: 0.2s">
+                    <div class="w-16 h-16 bg-sage-100 rounded-2xl flex items-center justify-center text-sage-600 text-3xl mb-6">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-sage-800 mb-3">Masjid & Mushola</h3>
+                    <p class="text-earth-600 mb-4">Masjid jami Al-ikhlas sebagai pusat kegiatan keagamaan dan 3 mushola di setiap RT.</p>
+                    <div class="flex items-center text-sm text-sage-600 font-medium">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>Tengah Wilayah RW</span>
+                    </div>
+                </div>
+
+                <!-- Lapangan -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-in">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 text-3xl mb-6">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-sage-800 mb-3">Lapangan Olahraga</h3>
+                    <p class="text-earth-600 mb-4">Lapangan multifungsi untuk futsal, voli, dan kegiatan olahraga warga lainnya.</p>
+                    <div class="flex items-center text-sm text-sage-600 font-medium">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>RT 02 & RT 04</span>
+                    </div>
+                </div>
+
+                <!-- Balai Warga -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-in" style="transition-delay: 0.1s">
+                    <div class="w-16 h-16 bg-gold-100 rounded-2xl flex items-center justify-center text-gold-600 text-3xl mb-6">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-sage-800 mb-3">Balai Warga</h3>
+                    <p class="text-earth-600 mb-4">Gedung serbaguna untuk rapat warga, arisan, pengajian, dan kegiatan komunitas.</p>
+                    <div class="flex items-center text-sm text-sage-600 font-medium">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>Depan belakang lapangan koramil</span>
+                    </div>
+                </div>
+
+                <!-- Keamanan -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-in" style="transition-delay: 0.2s">
+                    <div class="w-16 h-16 bg-earth-100 rounded-2xl flex items-center justify-center text-earth-600 text-3xl mb-6">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-sage-800 mb-3">Keamanan & Ronda</h3>
+                    <p class="text-earth-600 mb-4">Sistem keamanan lingkungan dengan jadwal ronda malam dan pos kamling aktif.</p>
+                    <div class="flex items-center text-sm text-sage-600 font-medium">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>24 Jam Bergilir</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Section -->
+            <div class="mt-16 bg-gradient-to-r from-sage-800 to-sage-700 rounded-3xl p-8 md:p-12 text-white fade-in">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold mb-4">Butuh Bantuan Layanan?</h3>
+                        <p class="text-cream-100 mb-6">Hubungi admin RW untuk informasi lebih lanjut tentang layanan dan peminjaman fasilitas.</p>
+                        <button class="bg-gold-500 hover:bg-gold-600 text-white px-8 py-3 rounded-full font-semibold transition flex items-center gap-2">
+                            <i class="fab fa-whatsapp"></i>
+                            Hubungi Admin
+                        </button>
+                    </div>
+                    <div class="flex-1 flex justify-center">
+                        <div class="w-32 h-32 bg-white/10 rounded-full flex items-center justify-center text-6xl">
+                            <i class="fas fa-headset text-gold-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 4: UMKM & JASA (ASLI) -->
+    <section id="umkm" class="page pt-20 bg-cream-50">
+        <div class="bg-sage-800 py-20 relative overflow-hidden">
+            <div class="absolute inset-0 islamic-pattern opacity-10"></div>
+            <div class="max-w-7xl mx-auto px-4 relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 text-center">UMKM & Jasa</h1>
+                <p class="text-cream-200 text-center max-w-2xl mx-auto">Dukung usaha warga lokal RW 10 - Dari warga untuk warga</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <!-- Search & Filter -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 mb-8 fade-in">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="flex-1 relative">
+                        <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-earth-400"></i>
+                        <input type="text" id="umkmSearch" placeholder="Cari usaha atau jasa..." 
+                            class="w-full pl-12 pr-4 py-3 border border-cream-200 rounded-xl focus:outline-none focus:border-sage-500 search-input transition"
+                            onkeyup="searchUMKM()">
+                    </div>
+                    <div class="flex gap-2 overflow-x-auto pb-2 md:pb-0">
+                        <button class="umkm-filter active-category px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap" onclick="filterUMKM('all', this)">Semua</button>
+                        <button class="umkm-filter bg-cream-100 text-earth-700 px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap hover:bg-cream-200 transition" onclick="filterUMKM('kuliner', this)">Kuliner</button>
+                        <button class="umkm-filter bg-cream-100 text-earth-700 px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap hover:bg-cream-200 transition" onclick="filterUMKM('jasa', this)">Jasa</button>
+                        <button class="umkm-filter bg-cream-100 text-earth-700 px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap hover:bg-cream-200 transition" onclick="filterUMKM('fashion', this)">Fashion</button>
+                        <button class="umkm-filter bg-cream-100 text-earth-700 px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap hover:bg-cream-200 transition" onclick="filterUMKM('otomotif', this)">Otomotif</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UMKM Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="umkmGrid">
+                <!-- Warung Makan -->
+                <div class="umkm-item kuliner bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://kimi-web-img.moonshot.cn/img/www.shutterstock.com/7201d6e159104a003f71ef8dc7a44354962cf6d3.jpg" alt="Warung Makan" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium mb-3">Kuliner</span>
+                        <h3 class="text-xl font-bold text-sage-800 mb-2">Warung Bu Siti</h3>
+                        <p class="text-earth-600 text-sm mb-4">Nasi uduk, lontong sayur, dan aneka gorengan khas Indonesia. Buka dari pagi hingga siang.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-earth-500"><i class="fas fa-map-marker-alt mr-1"></i> RT 01</span>
+                            <a href="https://wa.me/6281234567890" target="_blank" class="whatsapp-btn text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Hubungi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laundry -->
+                <div class="umkm-item jasa bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in" style="transition-delay: 0.1s">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://kimi-web-img.moonshot.cn/img/topfranchise.com/96bd8fe82b3cb8b4aef23bc2e68f7873abec4f7a.webp" alt="Laundry" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium mb-3">Jasa</span>
+                        <h3 class="text-xl font-bold text-sage-800 mb-2">Laundry Clean & Fresh</h3>
+                        <p class="text-earth-600 text-sm mb-4">Laundry kiloan dan satuan dengan layanan antar-jemput gratis untuk warga RW 10.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-earth-500"><i class="fas fa-map-marker-alt mr-1"></i> RT 02</span>
+                            <a href="https://wa.me/6281234567891" target="_blank" class="whatsapp-btn text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Hubungi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servis Motor -->
+                <div class="umkm-item otomotif bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in" style="transition-delay: 0.2s">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://kimi-web-img.moonshot.cn/img/www.asianagri.com/5c9d38836832e5ddaaa9f89d10ef3a5598fe5dbb.jpg" alt="Servis Motor" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-medium mb-3">Otomotif</span>
+                        <h3 class="text-xl font-bold text-sage-800 mb-2">ADS_Adit Racing</h3>
+                        <p class="text-earth-600 text-sm mb-4">Servis motor, ganti oli, dan tune-up. Pengalaman 25 tahun. Buka 24 jam untuk emergency.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-earth-500"><i class="fas fa-map-marker-alt mr-1"></i> RT 03</span>
+                            <a href="https://wa.me/6281234567892" target="_blank" class="whatsapp-btn text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Hubungi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tukang Listrik -->
+                <div class="umkm-item jasa bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in">
+                    <div class="h-48 bg-gradient-to-br from-yellow-100 to-orange-100 flex items-center justify-center">
+                        <i class="fas fa-bolt text-6xl text-yellow-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium mb-3">Jasa</span>
+                        <h3 class="text-xl font-bold text-sage-800 mb-2">Tukang Listrik ronggo</h3>
+                        <p class="text-earth-600 text-sm mb-4">Instalasi listrik, perbaikan, dan pemasangan peralatan elektronik. Siap panggilan darurat.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-earth-500"><i class="fas fa-map-marker-alt mr-1"></i> RT 01</span>
+                            <a href="https://wa.me/6281234567893" target="_blank" class="whatsapp-btn text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Hubungi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fashion -->
+                <div class="umkm-item fashion bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in" style="transition-delay: 0.1s">
+                    <div class="h-48 bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
+                        <i class="fas fa-tshirt text-6xl text-pink-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-xs font-medium mb-3">Fashion</span>
+                        <h3 class="text-xl font-bold text-sage-800 mb-2">Butik Muslimah Aisyah</h3>
+                        <p class="text-earth-600 text-sm mb-4">Busana muslimah modern dan syar'i. Tersedia gamis, hijab, dan aksesoris. Bisa COD.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-earth-500"><i class="fas fa-map-marker-alt mr-1"></i> RT 04</span>
+                            <a href="https://wa.me/6281234567894" target="_blank" class="whatsapp-btn text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Hubungi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kuliner -->
+                <div class="umkm-item kuliner bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in" style="transition-delay: 0.2s">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://kimi-web-img.moonshot.cn/img/www.shutterstock.com/d1bf032911cfe970cf36ee56286d3d09f5b84cb7.jpg" alt="Warung" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium mb-3">Kuliner</span>
+                        <h3 class="text-xl font-bold text-sage-800 mb-2">Kue Kering Ibu Rina</h3>
+                        <p class="text-earth-600 text-sm mb-4">Aneka kue kering homemade: nastar, kastengel, putri salju. Menerima pesanan besar.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-earth-500"><i class="fas fa-map-marker-alt mr-1"></i> RT 02</span>
+                            <a href="https://wa.me/6281234567895" target="_blank" class="whatsapp-btn text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Hubungi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tukang Kayu -->
+                <div class="umkm-item jasa bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in">
+                    <div class="h-48 bg-gradient-to-br from-amber-100 to-yellow-100 flex items-center justify-center">
+                        <i class="fas fa-hammer text-6xl text-amber-700"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium mb-3">Jasa</span>
+                        <h3 class="text-xl font-bold text-sage-800 mb-2">Tukang Kayu Pak Slamet</h3>
+                        <p class="text-earth-600 text-sm mb-4">Pembuatan furniture, perbaikan rumah, dan renovasi. Harga warga, kualitas terjamin.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-earth-500"><i class="fas fa-map-marker-alt mr-1"></i> RT 03</span>
+                            <a href="https://wa.me/6281234567896" target="_blank" class="whatsapp-btn text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Hubungi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Otomotif -->
+                <div class="umkm-item otomotif bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in" style="transition-delay: 0.1s">
+                    <div class="h-48 bg-gradient-to-br from-gray-100 to-slate-200 flex items-center justify-center">
+                        <i class="fas fa-car text-6xl text-slate-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-medium mb-3">Otomotif</span>
+                        <h3 class="text-xl font-bold text-sage-800 mb-2">ADS_ Adit Steam</h3>
+                        <p class="text-earth-600 text-sm mb-4">Cuci mobil dan motor lengkap dengan wax. Layanan home service tersedia.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-earth-500"><i class="fas fa-map-marker-alt mr-1"></i> RT 04</span>
+                            <a href="https://wa.me/6281234567897" target="_blank" class="whatsapp-btn text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Hubungi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kuliner -->
+                <div class="umkm-item kuliner bg-white rounded-2xl overflow-hidden shadow-lg card-hover fade-in" style="transition-delay: 0.2s">
+                    <div class="h-48 bg-gradient-to-br from-green-100 to-emerald-100 flex items-center justify-center">
+                        <i class="fas fa-leaf text-6xl text-green-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium mb-3">Kuliner</span>
+                        <h3 class="text-xl font-bold text-sage-800 mb-2">Sayur Organik Pak Tani</h3>
+                        <p class="text-earth-600 text-sm mb-4">Sayur dan buah segar langsung dari petani lokal. Antar setiap pagi.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-earth-500"><i class="fas fa-map-marker-alt mr-1"></i> RT 01</span>
+                            <a href="https://wa.me/6281234567898" target="_blank" class="whatsapp-btn text-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Hubungi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 5: DATABASE WARGA (ASLI) -->
+    <section id="database" class="page pt-20 bg-cream-50">
+        <div class="bg-sage-800 py-20 relative overflow-hidden">
+            <div class="absolute inset-0 islamic-pattern opacity-10"></div>
+            <div class="max-w-7xl mx-auto px-4 relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 text-center">Database Warga</h1>
+                <p class="text-cream-200 text-center max-w-2xl mx-auto">Direktori warga dan keahlian untuk memudahkan silaturahmi dan kerja sama</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <!-- Search & Filter -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 mb-8 fade-in">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="flex-1 relative">
+                        <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-earth-400"></i>
+                        <input type="text" id="wargaSearch" placeholder="Cari nama atau keahlian..." 
+                            class="w-full pl-12 pr-4 py-3 border border-cream-200 rounded-xl focus:outline-none focus:border-sage-500 search-input transition"
+                            onkeyup="searchWarga()">
+                    </div>
+                    <select id="rtFilter" onchange="filterWargaRT()" class="px-4 py-3 border border-cream-200 rounded-xl focus:outline-none focus:border-sage-500 bg-white text-earth-700">
+                        <option value="all">Semua RT</option>
+                        <option value="RT 01">RT 01</option>
+                        <option value="RT 02">RT 02</option>
+                        <option value="RT 03">RT 03</option>
+                        <option value="RT 04">RT 04</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Warga Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="wargaGrid">
+                <!-- Warga Cards -->
+                <div class="warga-item bg-white rounded-2xl p-6 shadow-lg card-hover fade-in" data-rt="RT 01">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-sage-100 rounded-full flex items-center justify-center text-sage-600 text-xl font-bold">
+                            A
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sage-800">Ahmad Suryadi</h3>
+                            <span class="text-xs text-gold-600 font-medium">RT 01</span>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-briefcase w-5 text-sage-500"></i>
+                            <span>Tukang Listrik</span>
+                        </div>
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-phone w-5 text-sage-500"></i>
+                            <span>0812-3456-7890</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warga-item bg-white rounded-2xl p-6 shadow-lg card-hover fade-in" data-rt="RT 02" style="transition-delay: 0.05s">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-gold-100 rounded-full flex items-center justify-center text-gold-600 text-xl font-bold">
+                            B
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sage-800">Budi Santoso</h3>
+                            <span class="text-xs text-gold-600 font-medium">RT 02</span>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-briefcase w-5 text-sage-500"></i>
+                            <span>Servis Motor</span>
+                        </div>
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-phone w-5 text-sage-500"></i>
+                            <span>0812-3456-7891</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warga-item bg-white rounded-2xl p-6 shadow-lg card-hover fade-in" data-rt="RT 03" style="transition-delay: 0.1s">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-earth-100 rounded-full flex items-center justify-center text-earth-600 text-xl font-bold">
+                            C
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sage-800">Citra Lestari</h3>
+                            <span class="text-xs text-gold-600 font-medium">RT 03</span>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-briefcase w-5 text-sage-500"></i>
+                            <span>Guru TK</span>
+                        </div>
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-phone w-5 text-sage-500"></i>
+                            <span>0812-3456-7892</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warga-item bg-white rounded-2xl p-6 shadow-lg card-hover fade-in" data-rt="RT 04" style="transition-delay: 0.15s">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xl font-bold">
+                            D
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sage-800">Dedi Kurniawan</h3>
+                            <span class="text-xs text-gold-600 font-medium">RT 04</span>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-briefcase w-5 text-sage-500"></i>
+                            <span>Supir Pribadi</span>
+                        </div>
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-phone w-5 text-sage-500"></i>
+                            <span>0812-3456-7893</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warga-item bg-white rounded-2xl p-6 shadow-lg card-hover fade-in" data-rt="RT 01">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-xl font-bold">
+                            E
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sage-800">Eko Prasetyo</h3>
+                            <span class="text-xs text-gold-600 font-medium">RT 01</span>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-briefcase w-5 text-sage-500"></i>
+                            <span>Tukang Kayu</span>
+                        </div>
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-phone w-5 text-sage-500"></i>
+                            <span>0812-3456-7894</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warga-item bg-white rounded-2xl p-6 shadow-lg card-hover fade-in" data-rt="RT 02" style="transition-delay: 0.05s">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 text-xl font-bold">
+                            F
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sage-800">Fitriani</h3>
+                            <span class="text-xs text-gold-600 font-medium">RT 02</span>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-briefcase w-5 text-sage-500"></i>
+                            <span>Penjahit</span>
+                        </div>
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-phone w-5 text-sage-500"></i>
+                            <span>0812-3456-7895</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warga-item bg-white rounded-2xl p-6 shadow-lg card-hover fade-in" data-rt="RT 03" style="transition-delay: 0.1s">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center text-red-600 text-xl font-bold">
+                            G
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sage-800">Gunawan</h3>
+                            <span class="text-xs text-gold-600 font-medium">RT 03</span>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-briefcase w-5 text-sage-500"></i>
+                            <span>Tukang AC</span>
+                        </div>
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-phone w-5 text-sage-500"></i>
+                            <span>0812-3456-7896</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warga-item bg-white rounded-2xl p-6 shadow-lg card-hover fade-in" data-rt="RT 04" style="transition-delay: 0.15s">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 text-xl font-bold">
+                            H
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sage-800">Hadi Wijaya</h3>
+                            <span class="text-xs text-gold-600 font-medium">RT 04</span>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-briefcase w-5 text-sage-500"></i>
+                            <span>Tukang Kebocoran</span>
+                        </div>
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-phone w-5 text-sage-500"></i>
+                            <span>0812-3456-7897</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warga-item bg-white rounded-2xl p-6 shadow-lg card-hover fade-in" data-rt="RT 01">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 text-xl font-bold">
+                            I
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sage-800">Indah Permata</h3>
+                            <span class="text-xs text-gold-600 font-medium">RT 01</span>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-briefcase w-5 text-sage-500"></i>
+                            <span>Pengrajin Rotan</span>
+                        </div>
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-phone w-5 text-sage-500"></i>
+                            <span>0812-3456-7898</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warga-item bg-white rounded-2xl p-6 shadow-lg card-hover fade-in" data-rt="RT 02" style="transition-delay: 0.05s">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-pink-100 rounded-full flex items-center justify-center text-pink-600 text-xl font-bold">
+                            J
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sage-800">Joko Susilo</h3>
+                            <span class="text-xs text-gold-600 font-medium">RT 02</span>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-briefcase w-5 text-sage-500"></i>
+                            <span>Montir AC</span>
+                        </div>
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-phone w-5 text-sage-500"></i>
+                            <span>0812-3456-7899</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warga-item bg-white rounded-2xl p-6 shadow-lg card-hover fade-in" data-rt="RT 03" style="transition-delay: 0.1s">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 text-xl font-bold">
+                            K
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sage-800">Kartini</h3>
+                            <span class="text-xs text-gold-600 font-medium">RT 03</span>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-briefcase w-5 text-sage-500"></i>
+                            <span>Bidan Desa</span>
+                        </div>
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-phone w-5 text-sage-500"></i>
+                            <span>0812-3456-7900</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warga-item bg-white rounded-2xl p-6 shadow-lg card-hover fade-in" data-rt="RT 04" style="transition-delay: 0.15s">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 text-xl font-bold">
+                            L
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sage-800">Lukman Hakim</h3>
+                            <span class="text-xs text-gold-600 font-medium">RT 04</span>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-briefcase w-5 text-sage-500"></i>
+                            <span>Satpam</span>
+                        </div>
+                        <div class="flex items-center text-sm text-earth-600">
+                            <i class="fas fa-phone w-5 text-sage-500"></i>
+                            <span>0812-3456-7901</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination Info -->
+            <div class="mt-8 text-center text-earth-500 text-sm fade-in">
+                <p>Menampilkan data warga RT 10 yang telah bersedia dipublikasikan. Untuk penambahan atau perubahan data, silakan hubungi sekretariat RW.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 6: STRUKTUR ORGANISASI (ASLI) -->
+    <section id="struktur" class="page pt-20 bg-cream-50">
+        <div class="bg-sage-800 py-20 relative overflow-hidden">
+            <div class="absolute inset-0 islamic-pattern opacity-10"></div>
+            <div class="max-w-7xl mx-auto px-4 relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 text-center">Struktur Organisasi</h1>
+                <p class="text-cream-200 text-center max-w-2xl mx-auto">Susunan pengurus RW 10 periode 2023-2028</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <!-- RW Inti -->
+            <div class="mb-16 fade-in">
+                <h2 class="text-2xl font-bold text-sage-800 text-center mb-10 relative">
+                    <span class="bg-cream-50 px-4 relative z-10">Pengurus Harian RW</span>
+                    <div class="absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-sage-300 to-transparent -z-0"></div>
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Ketua RW -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg card-hover text-center relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold-400 to-gold-600"></div>
+                        <div class="w-24 h-24 mx-auto bg-gradient-to-br from-sage-100 to-sage-200 rounded-full flex items-center justify-center text-4xl text-sage-700 mb-4 border-4 border-gold-200">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-sage-800">Yusuf saepudin</h3>
+                        <p class="text-gold-600 font-medium text-sm mb-2">Ketua RW 10</p>
+                        <p class="text-earth-500 text-xs">Periode 2025-2030</p>
+                    </div>
+
+                    <!-- Wakil -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg card-hover text-center relative overflow-hidden" style="transition-delay: 0.1s">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sage-400 to-sage-600"></div>
+                        <div class="w-24 h-24 mx-auto bg-gradient-to-br from-sage-100 to-sage-200 rounded-full flex items-center justify-center text-4xl text-sage-700 mb-4 border-4 border-sage-200">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-sage-800">Jendral Botik</h3>
+                        <p class="text-sage-600 font-medium text-sm mb-2">Wakil Ketua RW</p>
+                        <p class="text-earth-500 text-xs">Koordinator Umum</p>
+                    </div>
+
+                    <!-- Sekretaris -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg card-hover text-center relative overflow-hidden" style="transition-delay: 0.2s">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-blue-600"></div>
+                        <div class="w-24 h-24 mx-auto bg-gradient-to-br from-blue-50 to-blue-100 rounded-full flex items-center justify-center text-4xl text-blue-700 mb-4 border-4 border-blue-200">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-sage-800">Komarudin</h3>
+                        <p class="text-blue-600 font-medium text-sm mb-2">Sekretaris</p>
+                        <p class="text-earth-500 text-xs">Administrasi & Dokumentasi</p>
+                    </div>
+
+                    <!-- Bendahara -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg card-hover text-center relative overflow-hidden" style="transition-delay: 0.3s">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-green-600"></div>
+                        <div class="w-24 h-24 mx-auto bg-gradient-to-br from-green-50 to-green-100 rounded-full flex items-center justify-center text-4xl text-green-700 mb-4 border-4 border-green-200">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-sage-800">Tedi</h3>
+                        <p class="text-green-600 font-medium text-sm mb-2">Bendahara</p>
+                        <p class="text-earth-500 text-xs">Keuangan & Asset</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ketua RT -->
+            <div class="mb-16 fade-in">
+                <h2 class="text-2xl font-bold text-sage-800 text-center mb-10 relative">
+                    <span class="bg-cream-50 px-4 relative z-10">Ketua RT</span>
+                    <div class="absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-sage-300 to-transparent -z-0"></div>
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg card-hover text-center">
+                        <div class="w-16 h-16 mx-auto bg-sage-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">01</div>
+                        <h3 class="text-lg font-bold text-sage-800">Pak Pujiono</h3>
+                        <p class="text-earth-600 text-sm">Ketua RT 01</p>
+                        <div class="mt-3 text-xs text-earth-500">Jl. Abah Misja</div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 shadow-lg card-hover text-center" style="transition-delay: 0.1s">
+                        <div class="w-16 h-16 mx-auto bg-sage-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">02</div>
+                        <h3 class="text-lg font-bold text-sage-800">Ibu Nurhayati S.H, M.H</h3>
+                        <p class="text-earth-600 text-sm">Ketua RT 02</p>
+                        <div class="mt-3 text-xs text-earth-500">Jl. Melati 21-40</div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 shadow-lg card-hover text-center" style="transition-delay: 0.2s">
+                        <div class="w-16 h-16 mx-auto bg-sage-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">03</div>
+                        <h3 class="text-lg font-bold text-sage-800">Bpk. Kampret</h3>
+                        <p class="text-earth-600 text-sm">Ketua RT 03</p>
+                        <div class="mt-3 text-xs text-earth-500">Jl. Anggrek 41-60</div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 shadow-lg card-hover text-center" style="transition-delay: 0.3s">
+                        <div class="w-16 h-16 mx-auto bg-sage-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">04</div>
+                        <h3 class="text-lg font-bold text-sage-800">Bpk. Ade Ramdani</h3>
+                        <p class="text-earth-600 text-sm">Ketua RT 04</p>
+                        <div class="mt-3 text-xs text-earth-500">Jl. Kenanga 61-80</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lembaga -->
+            <div class="fade-in">
+                <h2 class="text-2xl font-bold text-sage-800 text-center mb-10 relative">
+                    <span class="bg-cream-50 px-4 relative z-10">Lembaga Kemasyarakatan</span>
+                    <div class="absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-gold-300 to-transparent -z-0"></div>
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-gradient-to-br from-sage-600 to-sage-700 rounded-2xl p-6 shadow-lg text-white card-hover">
+                        <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center text-2xl mb-4">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-1">Karang Taruna</h3>
+                        <p class="text-sage-200 text-sm mb-3">Pemuda RW 10</p>
+                        <p class="text-sage-100 text-xs">Dea Erlangga</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl p-6 shadow-lg text-white card-hover" style="transition-delay: 0.1s">
+                        <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center text-2xl mb-4">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-1">Ibu PKK</h3>
+                        <p class="text-pink-200 text-sm mb-3">Pemberdayaan Perempuan</p>
+                        <p class="text-pink-100 text-xs">Ketua: Ibu Siti Aminah</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-gold-500 to-gold-600 rounded-2xl p-6 shadow-lg text-white card-hover" style="transition-delay: 0.2s">
+                        <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center text-2xl mb-4">
+                            <i class="fas fa-mosque"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-1">DKM Masjid</h3>
+                        <p class="text-gold-200 text-sm mb-3">Dewan Kemakmuran Masjid</p>
+                        <p class="text-gold-100 text-xs">Ketua: Ust. Saepurahman</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-6 shadow-lg text-white card-hover">
+                        <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center text-2xl mb-4">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-1">Bidang Olahraga</h3>
+                        <p class="text-blue-200 text-sm mb-3">Seksi Olahraga & Kesehatan</p>
+                        <p class="text-blue-100 text-xs">Koordinator: Pak Joko</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-earth-500 to-earth-600 rounded-2xl p-6 shadow-lg text-white card-hover" style="transition-delay: 0.1s">
+                        <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center text-2xl mb-4">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-1">Linmas</h3>
+                        <p class="text-earth-200 text-sm mb-3">Perlindungan Masyarakat</p>
+                        <p class="text-earth-100 text-xs">Koordinator: Pak Slamet</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-6 shadow-lg text-white card-hover" style="transition-delay: 0.2s">
+                        <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center text-2xl mb-4">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-1">TPA & Majelis Ta'lim</h3>
+                        <p class="text-purple-200 text-sm mb-3">Pendidikan Agama</p>
+                        <p class="text-purple-100 text-xs">Ketua: Ustadz Rahmat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 7: TENTANG & KONTAK (ASLI) -->
+    <section id="tentang" class="page pt-20 bg-cream-50">
+        <div class="bg-sage-800 py-20 relative overflow-hidden">
+            <div class="absolute inset-0 islamic-pattern opacity-10"></div>
+            <div class="max-w-7xl mx-auto px-4 relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 text-center">Tentang & Kontak</h1>
+                <p class="text-cream-200 text-center max-w-2xl mx-auto">Mengenal lebih dekat RW 10 dan nilai-nilai kebersamaan kami</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <!-- Profile Section -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 items-center">
+                <div class="fade-in">
+                    <img src="https://kimi-web-img.moonshot.cn/img/www.socialexpat.net/04d94c066b7f24d0402562bd148b4ff8a4b54803.jpg" alt="Guyub RW 10" class="rounded-3xl shadow-2xl w-full object-cover h-96">
+                </div>
+                <div class="fade-in">
+                    <h2 class="text-3xl font-bold text-sage-800 mb-6">Profil Guyub RW 10</h2>
+                    <p class="text-earth-600 mb-6 leading-relaxed">
+                        RW 10 merupakan salah satu Rukun Warga yang terletak di Desa Cicadas, Kecamatan Gunung Putri, Kabupaten Bogor. Dengan 4 RT yang aktif dan beragam, kami membangun lingkungan yang penuh kebersamaan dan gotong royong.
+                    </p>
+                    <p class="text-earth-600 mb-6 leading-relaxed">
+                        Nama "Guyub" dipilih menggambarkan semangat kebersamaan warga yang selalu rukun, saling tolong menolong, dan menjaga nilai-nilai keislaman dalam kehidupan bermasyarakat.
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-sage-600">150+</div>
+                            <div class="text-sm text-earth-500">KK</div>
+                        </div>
+                        <div class="w-px bg-earth-300"></div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-sage-600">600+</div>
+                            <div class="text-sm text-earth-500">Jiwa</div>
+                        </div>
+                        <div class="w-px bg-earth-300"></div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-sage-600">15</div>
+                            <div class="text-sm text-earth-500">Tahun</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visi Misi -->
+            <div class="bg-white rounded-3xl shadow-lg p-8 md:p-12 mb-16 fade-in">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-sage-800 mb-4">Visi & Misi</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-sage-500 to-gold-500 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="text-center md:text-left">
+                        <div class="inline-block p-4 bg-sage-100 rounded-2xl mb-4">
+                            <i class="fas fa-eye text-3xl text-sage-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-sage-800 mb-4">Visi</h3>
+                        <p class="text-earth-600 text-lg italic">
+                            "Mewujudkan lingkungan RW 10 yang harmonis, religius, dan produktif melalui semangat kebersamaan dan pemberdayaan masyarakat."
+                        </p>
+                    </div>
+                    <div>
+                        <div class="inline-block p-4 bg-gold-100 rounded-2xl mb-4">
+                            <i class="fas fa-bullseye text-3xl text-gold-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-sage-800 mb-4">Misi</h3>
+                        <ul class="space-y-3 text-earth-600">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-sage-500 mt-1"></i>
+                                <span>Meningkatkan kebersamaan dan gotong royong antar warga</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-sage-500 mt-1"></i>
+                                <span>Mendorong pertumbuhan UMKM lokal melalui digitalisasi</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-sage-500 mt-1"></i>
+                                <span>Memperkuat nilai-nilai keagamaan dan toleransi</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-sage-500 mt-1"></i>
+                                <span>Mewujudkan lingkungan yang sehat, bersih, dan aman</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-in text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-2xl mx-auto mb-4">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-sage-800 mb-2">WhatsApp Admin</h3>
+                    <p class="text-earth-600 mb-4">Hubungi admin RW untuk informasi dan bantuan</p>
+                    <a href="https://wa.me/6281234567000" target="_blank" class="text-green-600 font-semibold hover:underline">0812-3456-7000</a>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-in text-center" style="transition-delay: 0.1s">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl mx-auto mb-4">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-sage-800 mb-2">Telepon Posko</h3>
+                    <p class="text-earth-600 mb-4">Layanan darurat dan keamanan lingkungan</p>
+                    <p class="text-blue-600 font-semibold">(021) 555-0123</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-in text-center" style="transition-delay: 0.2s">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-red-600 text-2xl mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-sage-800 mb-2">Alamat</h3>
+                    <p class="text-earth-600 mb-4">Lokasi Balai RW 10</p>
+                    <p class="text-red-600 font-semibold">Jl. Harmoni No. 10, Jakarta</p>
+                </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden fade-in">
+                <div class="h-96 bg-gradient-to-br from-sage-100 to-cream-200 flex items-center justify-center relative">
+                    <div class="text-center">
+                        <i class="fas fa-map-marked-alt text-6xl text-sage-400 mb-4"></i>
+                        <p class="text-sage-600 font-medium">Peta Lokasi RW 10</p>
+                        <p class="text-earth-500 text-sm mt-2">Koordinat: -6.200000, 106.816666</p>
+                    </div>
+                    <!-- Decorative map elements -->
+                    <div class="absolute top-10 left-10 w-20 h-20 bg-white/50 rounded-full blur-xl"></div>
+                    <div class="absolute bottom-10 right-10 w-32 h-32 bg-sage-300/30 rounded-full blur-xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="layanan" class="page pt-20 bg-cream-50">
         <div class="bg-sage-800 py-20 relative overflow-hidden">
             <div class="absolute inset-0 islamic-pattern opacity-10"></div>
